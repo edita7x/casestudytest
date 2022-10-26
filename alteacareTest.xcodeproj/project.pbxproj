@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04300CCFBD3CBFFAAB618C7D /* Pods_alteacareTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F7D3792F96D9F138EFC105 /* Pods_alteacareTest.framework */; };
+		CBAF3D49290961D800DF83BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D48290961D800DF83BF /* AppDelegate.swift */; };
+		CBAF3D4B290961D800DF83BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D4A290961D800DF83BF /* SceneDelegate.swift */; };
+		CBAF3D4D290961D800DF83BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D4C290961D800DF83BF /* ViewController.swift */; };
+		CBAF3D52290961DD00DF83BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAF3D51290961DD00DF83BF /* Assets.xcassets */; };
+		CBAF3D55290961DD00DF83BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAF3D53290961DD00DF83BF /* LaunchScreen.storyboard */; };
+		CBAF3D5F29096A5C00DF83BF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D5E29096A5C00DF83BF /* BaseViewController.swift */; };
+		CBAF3D6629096B2A00DF83BF /* HomeItemDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D6529096B2A00DF83BF /* HomeItemDto.swift */; };
+		CBAF3D6829096B3400DF83BF /* HomeResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D6729096B3400DF83BF /* HomeResponseDto.swift */; };
+		CBAF3D6A29096B4400DF83BF /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D6929096B4400DF83BF /* HomeRepository.swift */; };
+		CBAF3D6C29096B5600DF83BF /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D6B29096B5600DF83BF /* HomeCell.swift */; };
+		CBAF3D6F29096B7500DF83BF /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D6E29096B7500DF83BF /* RestClient.swift */; };
+		CBAF3D7129096B8200DF83BF /* RestDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D7029096B8200DF83BF /* RestDto.swift */; };
+		CBAF3D7329096B8900DF83BF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D7229096B8900DF83BF /* Log.swift */; };
+		CBAF3D7529096B9500DF83BF /* ClientDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D7429096B9500DF83BF /* ClientDto.swift */; };
+		CBAF3D7729096C1F00DF83BF /* NSAttributeString + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D7629096C1F00DF83BF /* NSAttributeString + Extension.swift */; };
+		CBAF3D7A29096F1200DF83BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D7929096F1200DF83BF /* HomeViewController.swift */; };
+		CBAF3D7C29096F1E00DF83BF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D7B29096F1E00DF83BF /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D9FECAB375E2C068579EF56 /* Pods-alteacareTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alteacareTest.debug.xcconfig"; path = "Target Support Files/Pods-alteacareTest/Pods-alteacareTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CBAF3D45290961D800DF83BF /* alteacareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alteacareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAF3D48290961D800DF83BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBAF3D4A290961D800DF83BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CBAF3D4C290961D800DF83BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBAF3D51290961DD00DF83BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAF3D54290961DD00DF83BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBAF3D56290961DD00DF83BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAF3D5E29096A5C00DF83BF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CBAF3D6529096B2A00DF83BF /* HomeItemDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemDto.swift; sourceTree = "<group>"; };
+		CBAF3D6729096B3400DF83BF /* HomeResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponseDto.swift; sourceTree = "<group>"; };
+		CBAF3D6929096B4400DF83BF /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		CBAF3D6B29096B5600DF83BF /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		CBAF3D6E29096B7500DF83BF /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		CBAF3D7029096B8200DF83BF /* RestDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestDto.swift; sourceTree = "<group>"; };
+		CBAF3D7229096B8900DF83BF /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		CBAF3D7429096B9500DF83BF /* ClientDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDto.swift; sourceTree = "<group>"; };
+		CBAF3D7629096C1F00DF83BF /* NSAttributeString + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributeString + Extension.swift"; sourceTree = "<group>"; };
+		CBAF3D7929096F1200DF83BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CBAF3D7B29096F1E00DF83BF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EFFCDC666470AD9B1A40724D /* Pods-alteacareTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alteacareTest.release.xcconfig"; path = "Target Support Files/Pods-alteacareTest/Pods-alteacareTest.release.xcconfig"; sourceTree = "<group>"; };
+		F8F7D3792F96D9F138EFC105 /* Pods_alteacareTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alteacareTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBAF3D42290961D800DF83BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04300CCFBD3CBFFAAB618C7D /* Pods_alteacareTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B4ACC25F7038D82D87FB219 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D9FECAB375E2C068579EF56 /* Pods-alteacareTest.debug.xcconfig */,
+				EFFCDC666470AD9B1A40724D /* Pods-alteacareTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CBAF3D3C290961D800DF83BF = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D47290961D800DF83BF /* alteacareTest */,
+				CBAF3D46290961D800DF83BF /* Products */,
+				7B4ACC25F7038D82D87FB219 /* Pods */,
+				F63E3CA0730768AB3F394B84 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBAF3D46290961D800DF83BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D45290961D800DF83BF /* alteacareTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBAF3D47290961D800DF83BF /* alteacareTest */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D5D29096A4700DF83BF /* App */,
+				CBAF3D5C29096A3E00DF83BF /* Network */,
+				CBAF3D48290961D800DF83BF /* AppDelegate.swift */,
+				CBAF3D4A290961D800DF83BF /* SceneDelegate.swift */,
+				CBAF3D4C290961D800DF83BF /* ViewController.swift */,
+				CBAF3D5E29096A5C00DF83BF /* BaseViewController.swift */,
+				CBAF3D51290961DD00DF83BF /* Assets.xcassets */,
+				CBAF3D53290961DD00DF83BF /* LaunchScreen.storyboard */,
+				CBAF3D56290961DD00DF83BF /* Info.plist */,
+			);
+			path = alteacareTest;
+			sourceTree = "<group>";
+		};
+		CBAF3D5C29096A3E00DF83BF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D6D29096B6700DF83BF /* Dto */,
+				CBAF3D6E29096B7500DF83BF /* RestClient.swift */,
+				CBAF3D7029096B8200DF83BF /* RestDto.swift */,
+				CBAF3D7229096B8900DF83BF /* Log.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CBAF3D5D29096A4700DF83BF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D6029096AE500DF83BF /* Home */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CBAF3D6029096AE500DF83BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D7829096EF600DF83BF /* Extension */,
+				CBAF3D6329096B0B00DF83BF /* Repository */,
+				CBAF3D6229096B0400DF83BF /* HomeCell */,
+				CBAF3D7929096F1200DF83BF /* HomeViewController.swift */,
+				CBAF3D7B29096F1E00DF83BF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CBAF3D6229096B0400DF83BF /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D6B29096B5600DF83BF /* HomeCell.swift */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		CBAF3D6329096B0B00DF83BF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D6429096B1B00DF83BF /* Dto */,
+				CBAF3D6929096B4400DF83BF /* HomeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CBAF3D6429096B1B00DF83BF /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D6529096B2A00DF83BF /* HomeItemDto.swift */,
+				CBAF3D6729096B3400DF83BF /* HomeResponseDto.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		CBAF3D6D29096B6700DF83BF /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D7429096B9500DF83BF /* ClientDto.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		CBAF3D7829096EF600DF83BF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF3D7629096C1F00DF83BF /* NSAttributeString + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F63E3CA0730768AB3F394B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7D3792F96D9F138EFC105 /* Pods_alteacareTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBAF3D44290961D800DF83BF /* alteacareTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAF3D59290961DD00DF83BF /* Build configuration list for PBXNativeTarget "alteacareTest" */;
+			buildPhases = (
+				BFACF216A79B7BE8881A73E0 /* [CP] Check Pods Manifest.lock */,
+				CBAF3D41290961D800DF83BF /* Sources */,
+				CBAF3D42290961D800DF83BF /* Frameworks */,
+				CBAF3D43290961D800DF83BF /* Resources */,
+				82BDEE0590103240AFDFE379 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = alteacareTest;
+			productName = alteacareTest;
+			productReference = CBAF3D45290961D800DF83BF /* alteacareTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBAF3D3D290961D800DF83BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CBAF3D44290961D800DF83BF = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CBAF3D40290961D800DF83BF /* Build configuration list for PBXProject "alteacareTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBAF3D3C290961D800DF83BF;
+			productRefGroup = CBAF3D46290961D800DF83BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBAF3D44290961D800DF83BF /* alteacareTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBAF3D43290961D800DF83BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAF3D55290961DD00DF83BF /* LaunchScreen.storyboard in Resources */,
+				CBAF3D52290961DD00DF83BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82BDEE0590103240AFDFE379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alteacareTest/Pods-alteacareTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alteacareTest/Pods-alteacareTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alteacareTest/Pods-alteacareTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFACF216A79B7BE8881A73E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alteacareTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBAF3D41290961D800DF83BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAF3D7729096C1F00DF83BF /* NSAttributeString + Extension.swift in Sources */,
+				CBAF3D7529096B9500DF83BF /* ClientDto.swift in Sources */,
+				CBAF3D4D290961D800DF83BF /* ViewController.swift in Sources */,
+				CBAF3D7129096B8200DF83BF /* RestDto.swift in Sources */,
+				CBAF3D7329096B8900DF83BF /* Log.swift in Sources */,
+				CBAF3D7A29096F1200DF83BF /* HomeViewController.swift in Sources */,
+				CBAF3D6A29096B4400DF83BF /* HomeRepository.swift in Sources */,
+				CBAF3D6C29096B5600DF83BF /* HomeCell.swift in Sources */,
+				CBAF3D6629096B2A00DF83BF /* HomeItemDto.swift in Sources */,
+				CBAF3D6F29096B7500DF83BF /* RestClient.swift in Sources */,
+				CBAF3D5F29096A5C00DF83BF /* BaseViewController.swift in Sources */,
+				CBAF3D49290961D800DF83BF /* AppDelegate.swift in Sources */,
+				CBAF3D4B290961D800DF83BF /* SceneDelegate.swift in Sources */,
+				CBAF3D7C29096F1E00DF83BF /* HomeViewModel.swift in Sources */,
+				CBAF3D6829096B3400DF83BF /* HomeResponseDto.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBAF3D53290961DD00DF83BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAF3D54290961DD00DF83BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBAF3D57290961DD00DF83BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBAF3D58290961DD00DF83BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAF3D5A290961DD00DF83BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9FECAB375E2C068579EF56 /* Pods-alteacareTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5M74RL7L9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = alteacareTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.editsanrio.alteacareTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBAF3D5B290961DD00DF83BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFCDC666470AD9B1A40724D /* Pods-alteacareTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5M74RL7L9D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = alteacareTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.editsanrio.alteacareTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBAF3D40290961D800DF83BF /* Build configuration list for PBXProject "alteacareTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAF3D57290961DD00DF83BF /* Debug */,
+				CBAF3D58290961DD00DF83BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAF3D59290961DD00DF83BF /* Build configuration list for PBXNativeTarget "alteacareTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAF3D5A290961DD00DF83BF /* Debug */,
+				CBAF3D5B290961DD00DF83BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBAF3D3D290961D800DF83BF /* Project object */;
+}
