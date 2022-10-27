@@ -165,7 +165,7 @@ class HomeViewController : BaseViewController {
                         }
                     }
                 })
-            } else if self.query.isEmpty && self.specializationFilter.isEmpty {
+            } else {
                 self.data = self.newData
             }
             self.gridCollectionview.reloadData()
@@ -192,7 +192,7 @@ class HomeViewController : BaseViewController {
                         item.specialization.name == specialization
                     }
                 })
-            } else if self.query.isEmpty && self.hospitalFilter.isEmpty {
+            } else {
                 self.data = self.newData
             }
             self.gridCollectionview.reloadData()
@@ -245,9 +245,8 @@ extension HomeViewController: UISearchBarDelegate , UISearchResultsUpdating {
             }
             data = filtersearchData
             self.query = query
-        } else if hospitalFilter.isEmpty && specializationFilter.isEmpty {
+        } else  {
             self.data = self.newData
-
         }
         
         gridCollectionview.reloadData()
