@@ -9,6 +9,6 @@ target 'alteacareTest' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'SDWebImage'
-  pod 'RSSelectionMenu' or pod 'RSSelectionMenu', '~> 7.1.3'
+  pod 'DropDown'
   
 end

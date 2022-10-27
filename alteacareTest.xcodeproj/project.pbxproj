@@ -10,7 +10,6 @@
 		04300CCFBD3CBFFAAB618C7D /* Pods_alteacareTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F7D3792F96D9F138EFC105 /* Pods_alteacareTest.framework */; };
 		CBAF3D49290961D800DF83BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D48290961D800DF83BF /* AppDelegate.swift */; };
 		CBAF3D4B290961D800DF83BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D4A290961D800DF83BF /* SceneDelegate.swift */; };
-		CBAF3D4D290961D800DF83BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D4C290961D800DF83BF /* ViewController.swift */; };
 		CBAF3D52290961DD00DF83BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAF3D51290961DD00DF83BF /* Assets.xcassets */; };
 		CBAF3D55290961DD00DF83BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAF3D53290961DD00DF83BF /* LaunchScreen.storyboard */; };
 		CBAF3D5F29096A5C00DF83BF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAF3D5E29096A5C00DF83BF /* BaseViewController.swift */; };
@@ -32,7 +31,6 @@
 		CBAF3D45290961D800DF83BF /* alteacareTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alteacareTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAF3D48290961D800DF83BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBAF3D4A290961D800DF83BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBAF3D4C290961D800DF83BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBAF3D51290961DD00DF83BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBAF3D54290961DD00DF83BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBAF3D56290961DD00DF83BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				CBAF3D5C29096A3E00DF83BF /* Network */,
 				CBAF3D48290961D800DF83BF /* AppDelegate.swift */,
 				CBAF3D4A290961D800DF83BF /* SceneDelegate.swift */,
-				CBAF3D4C290961D800DF83BF /* ViewController.swift */,
 				CBAF3D5E29096A5C00DF83BF /* BaseViewController.swift */,
 				CBAF3D51290961DD00DF83BF /* Assets.xcassets */,
 				CBAF3D53290961DD00DF83BF /* LaunchScreen.storyboard */,
@@ -304,7 +301,6 @@
 			files = (
 				CBAF3D7729096C1F00DF83BF /* NSAttributeString + Extension.swift in Sources */,
 				CBAF3D7529096B9500DF83BF /* ClientDto.swift in Sources */,
-				CBAF3D4D290961D800DF83BF /* ViewController.swift in Sources */,
 				CBAF3D7129096B8200DF83BF /* RestDto.swift in Sources */,
 				CBAF3D7329096B8900DF83BF /* Log.swift in Sources */,
 				CBAF3D7A29096F1200DF83BF /* HomeViewController.swift in Sources */,

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double RSSelectionMenuVersionNumber;
-FOUNDATION_EXPORT const unsigned char RSSelectionMenuVersionString[];
+FOUNDATION_EXPORT double DropDownVersionNumber;
+FOUNDATION_EXPORT const unsigned char DropDownVersionString[];
 
